@@ -11,7 +11,7 @@ const NAV = [
 ];
 
 export function Sidebar() {
-  const path = usePathname();
+  const path = usePathname() ?? '';
 
   return (
     <aside style={{
