@@ -22,18 +22,21 @@ export function Sidebar() {
       padding: '2rem 0',
       display: 'flex',
       flexDirection: 'column',
-      gap: '2rem',
-      position: 'sticky',
-      top: 0,
-      height: '100vh',
     }}>
-      {/* Logo */}
-      <div style={{ padding: '0 1.5rem', display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
+      <div style={{
+        display: 'flex',
+        alignItems: 'center',
+        gap: '0.7rem',
+        padding: '0 1.25rem 1.5rem 1.25rem',
+      }}>
         <div style={{
-          width: 34, height: 34,
+          width: 34,
+          height: 34,
           background: 'linear-gradient(135deg, var(--accent), var(--accent3))',
           borderRadius: 8,
-          display: 'flex', alignItems: 'center', justifyContent: 'center',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
           flexShrink: 0,
         }}>
           <Zap size={17} color="#fff" fill="#fff" />
@@ -66,14 +69,6 @@ export function Sidebar() {
           );
         })}
       </nav>
-
-      {/* Footer */}
-      <div style={{ marginTop: 'auto', padding: '0 1.5rem' }}>
-        <div style={{ fontSize: '0.7rem', color: 'var(--muted)', fontFamily: 'var(--font-mono)', lineHeight: 1.6 }}>
-          QueueLess v1.0<br />
-          <span style={{ opacity: 0.5 }}>Powered by NestJS + MongoDB</span>
-        </div>
-      </div>
     </aside>
   );
 }
