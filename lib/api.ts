@@ -9,7 +9,7 @@ import type {
   SummaryStats,
 } from '@/types';
 
-const DEFAULT_API_URL = 'https://queueless-backend.onrender.com';
+const DEFAULT_API_URL = 'https://queueless-backend-production-dd70.up.railway.app';
 const BASE = (process.env.NEXT_PUBLIC_API_URL || DEFAULT_API_URL).replace(/\/$/, '');
 
 async function req<T>(path: string, init?: RequestInit): Promise<T> {

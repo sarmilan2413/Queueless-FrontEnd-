@@ -24,7 +24,7 @@ npm run dev
 `.env.local` is pre-configured to point at the deployed backend:
 
 ```
-NEXT_PUBLIC_API_URL=https://queueless-backend.onrender.com
+NEXT_PUBLIC_API_URL=https://queueless-backend-production-dd70.up.railway.app
 ```
 
 > **Note:** The backend is on Render's free tier, so the first request may
